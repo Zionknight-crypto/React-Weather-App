@@ -1,0 +1,157 @@
+.app {
+    min-height: 100vh;
+    background-image: url(./img/sakura.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5832a8;
+    background-size: cover;
+    background-position: top;    
+}
+
+.header__h1 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;  
+    margin-bottom: 2rem; 
+}
+
+@media screen and (max-width: 375px) {
+    .header__h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;    
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbox {
+    height: 2rem;
+    width: 12rem;
+    padding-left: 1rem;
+}
+
+.btn {
+    height: 2.25rem;
+    background-color: #5832a8;
+    border: 2px white solid;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    
+}
+
+.btn:hover {
+    background-color: white;
+    border: 2p #5832a8 solid;
+    color: #5832a8;
+}
+
+.main {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card {
+    height: 35rem;
+    width: 35rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 3px;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    color: rgba(58, 57, 57, 1);
+    background-image: linear-gradient(120deg, rgba(137, 247, 254, 0.8)0%, rgba(102, 166, 255,0.8) 100%);
+    background-size: cover;
+    background-position: top;
+    -moz-box-shadow: 2px 4px 8px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    -moz-box-shadow: 4px 8px 16px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 4px 8px 16px rgba(0, 0, 0, .5);
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        max-height:26rem;
+        max-width: 15rem;  
+    }
+}
+
+@media screen and (min-width: 655px) {
+    .card {
+        max-height: 35rem;
+        max-width: 35rem;    
+    }
+}
+
+
+.description {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    background-image: linear-gradient(to bottom, rgba(50, 92, 168), rgba(168, 50, 158));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.footer {
+    min-height: 5vh;
+    background-color: #5832a8;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1.5rem;
+    font-weight: bold;    
+}
+
+.footer__right-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__right-link:hover {
+    text-decoration: underline;
+}
+
+
