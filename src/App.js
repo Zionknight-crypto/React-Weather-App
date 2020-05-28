@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import sun from './img/sun.png'
+import ErrorBoundry from './ErrorBoundry'
 
 /*****************************************/ 
 /*               API DATA                */
@@ -75,6 +76,7 @@ export class App extends Component {
 
           <main className="main">
             <section>
+              <ErrorBoundry>
               <div className="card">
                 <p className="description">City: {city}</p> 
                 <p className="description">Country: {country}</p>
@@ -83,7 +85,9 @@ export class App extends Component {
                 <p className="description">Degrees Celsius: {temperature}</p>
                 <p className="description">{desc}</p>
               </div>
+              </ErrorBoundry>
             </section>
+            
           </main> 
 
           <footer className="footer">
